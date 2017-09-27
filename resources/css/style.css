@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  background-color: rgb(255, 242, 242);
+}
+
+h1 {
+  color: rgb(32, 64, 86);
+}
+
+p {
+  color: rgb(74, 74, 74);
+}
