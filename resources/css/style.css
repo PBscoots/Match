@@ -6,10 +6,40 @@ html {
   background-color: rgb(255, 242, 242);
 }
 
+body {
+  padding-top: 5.25rem;
+}
+
 h1 {
   color: rgb(32, 64, 86);
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 p {
   color: rgb(74, 74, 74);
+  font-size: 1rem;
+}
+
+.card {
+  height: 12.5rem;
+  background-color: rgb(32,64,86);
+  border: 4px solid #ffffff;
+  border-radius: 8px;
+}
+
+.card:hover{
+  cursor:pointer;
+}
+
+.card-solved{
+  background-color: rgb(153,153,153);
+  color: rgb(204,204,204);
+}
+
+.card-face {
+  font-weight: 900;
+  font-size: 7rem;
+  color:rgb(255,255,255);
+  text-align: center;
 }

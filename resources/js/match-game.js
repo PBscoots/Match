@@ -10,8 +10,30 @@ var MatchGame = {};
  */
 
 MatchGame.generateCardValues = function () {
-
+  numcards = 16;
+  randomCardArr = [];
+  //generate card number array
+  for(var i=0;i<(numcards/2);i++){
+    randomCardArr.push(i + 1);
+    randomCardArr.push(i + 1);
+  }
+  //shuffle with Fisher-Yates
+  return shuffle(randomCardArr);
 };
+
+function shuffle(array){
+  var m = array.length, t, i;
+  //while there remain elements to shuffle..
+  while(m){
+    //pick a remaining element
+    i = Math.floor(Math.random() * m--);
+    //swap with current element
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+  return array;
+}
 
 /*
   Converts card values to jQuery card objects and adds them to the supplied game
