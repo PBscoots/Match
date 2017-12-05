@@ -41,7 +41,10 @@ function shuffle(array){
 */
 
 MatchGame.renderCards = function(cardValues, $game) {
-
+  $game.empty(); // empties the game object
+  for (var i = 0; i < cardValues.length; i++) {
+    cardValues[i]
+  }
 };
 
 /*
